@@ -1,0 +1,251 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --cor0: #c5c6eb;
+    --cor1: #8c83e1;
+    --cor2: #3d48dc;
+    --cor3: #2f31a8;
+    --cor4: #1a1e5c;
+    --cor5: #07063d;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao); 
+}
+
+a.externo::after {
+    content: '\1f517';
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    font-family: var(--fonte-destaque);
+    text-align: center;
+    min-height: 120px;
+    padding-top: 25px;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
+header > p {
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.336);
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.342);
+}
+
+nav > a {
+    color: var(--cor1);
+    text-decoration: none;
+    padding: 15px 10px 10px 10px;
+    font-weight: bold;
+}
+
+nav > a:hover {
+    background-color: var(--cor2);
+    color: var(--cor4);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    transition-duration: 0.4s;
+}   
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 20px 20px 5px 20px;
+    margin: auto;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.623);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main p {
+    margin: 12px 0px 35px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 25px;
+}
+
+main p.abreviation {
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 25px;
+}
+
+main p.normal1 {
+    margin: 25px 0px 25px 0px;
+}
+
+main p.text {
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 25px;
+    margin: 18px 0px 10px 0px;
+}
+
+p.subtext {
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 25px;
+    margin: 15px 0px 15px 0px;
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color:var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+
+main a:hover {
+    color: var(--cor4);
+    text-decoration: underline;
+}
+
+main h1 {
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    color: var(--cor5);
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-indent: 8px;
+}
+
+main h2 {
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    color: var(--cor4);
+    font-size: 2em;
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+    text-indent: 8px;
+}
+
+main h5 > p {
+    margin: 3px 0px 15px 0px;
+    font-weight: normal;
+    font-style: italic;
+    text-align: right;
+}
+
+main h5 > p.center {
+    text-align: left;
+}
+
+main img {
+    width: 100%;
+}
+
+main img.img01 {
+    display: block;
+    max-width: 600px;
+    width: 100%;
+}
+
+div.video { 
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.7%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+main aside {
+    background-color: var(--cor1);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.336);
+}
+
+aside > h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+aside a {
+    background-color: var(--cor2);
+    color: var(--cor4);
+}
+
+aside ul {
+    list-style-type: '\2714\00a0\00a0';
+    list-style-position: inside;
+    columns: 2;
+    padding-left: 30px;
+}
+
+aside li > abbr {
+    text-decoration: underline;
+}
+
+footer p {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    font-size: 0.8em;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}
+
+footer img {
+    width: 20px;
+    height: auto;
+}
+
+footer p.social {
+    padding-top: 2px;
+    padding: 8px;
+}
